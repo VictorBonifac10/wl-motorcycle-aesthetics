@@ -25,13 +25,14 @@
 .box-logo .logo {
     width: 70px;
     border-radius: 50%;
+    cursor: pointer;
 }
 
 /* Links de navegação */
 .box-links {
     display: flex;
     align-items: center;
-    font-size: 24px;
+    font-size: 20px;
     gap: 20px;
 }
 
@@ -45,26 +46,20 @@
     color: #777777;
 }
 
-/* Botão de contato */
-.btn-contact {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-
-    width: 170px;
-    padding: 10px;
-    border: 1px solid #84ff00;
-    background: none;
-    color: #84ff00;
+#btn-contact {
+    font-size: 20px;
+    color: #a9872a;
+    padding: 7px;
+    width: 130px;
     border-radius: 50px;
+    background-color: transparent;
+    border: 1.5px solid #a9872a;
     cursor: pointer;
-    font-size: 24px;
     transition: 0.5s;
 }
 
-.btn-contact:hover {
-    background: #84ff00;
+#btn-contact:hover {
+    background-color: #a9872a;
     color: #ffffff;
 }
 
@@ -123,7 +118,7 @@
     position: relative;
     z-index: 3;
     color: white;
-    top: 210px;
+    top: 180px;
     left: 80px;
 }
 
@@ -131,7 +126,7 @@
     font-size: 50px;
 }
 
-.subtitle{
+.subtitle {
     font-size: 25px
 }
 
@@ -141,12 +136,46 @@
     max-width: 500px;
 }
 
-.img-moto{
-    margin-left: 150px ;
+.see-more {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 150px;
+    padding: 10px;
+    border: 1px solid #a9872a;
+    background: none;
+    color: #a9872a;
+    border-radius: 50px;
+    transition: 0.5s;
+    font-size: 17px;
+}
+
+.see-more:hover {
+    background: #a9872a;
+    color: #ffffff;
 }
 
 /* Conteúdo da página */
 main {
     padding: 2rem;
     background-color: #f5f5f5;
+}
+
+#carouselExampleIndicators {
+    width: 550px;
+    /* largura desejada */
+    height: 300px;
+    /* altura desejada */
+    display: flex;
+    align-items: center;
+    margin-left: 80px;
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+
+    /* mantém a imagem inteira sem cortar */
 }
