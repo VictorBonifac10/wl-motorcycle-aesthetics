@@ -1,11 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Bebas Neue", sans-serif;
+    scroll-behavior: smooth;
+}
+
+body{
+      overflow-x: hidden;
 }
 
 .box-top-header {
@@ -29,7 +35,6 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     /* sombra opcional */
 }
-
 
 /* Logo */
 .box-logo .logo {
@@ -58,6 +63,8 @@
 }
 
 #btn-contact {
+    display: flex;
+    justify-content: center;
     font-size: 20px;
     color: #a9872a;
     padding: 7px;
@@ -67,6 +74,8 @@
     border: 1.5px solid #a9872a;
     cursor: pointer;
     transition: 0.5s;
+    text-decoration: none;
+
 }
 
 #btn-contact:hover {
@@ -134,17 +143,43 @@
 }
 
 .title {
-    font-size: 50px;
+    font-size: 80px;
+}
+
+.title-custom {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    font-size: 73px;
+    font-family: "Satisfy", cursive;
+    font-weight: 500;
+    color: #a9872a;
+    text-shadow: 2px 2px 2px rgba(39, 39, 39, 0.9);
 }
 
 .subtitle {
-    font-size: 25px
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.subtitle li{
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+    border: 1px solid #a9872a;
+    background-color: #a9872a;
+    box-shadow: 2px 2px 1px #0f0f0f;
+    border-radius: 50px;
+    padding: 3px;
+    width: 80px;
 }
 
 .description {
-    margin-top: 10px;
     font-family: "Open Sans", sans-serif;
-    max-width: 500px;
+    max-width: 460px;
 }
 
 .see-more {
@@ -186,6 +221,35 @@
 
     /* mantém a imagem inteira sem cortar */
 }
+
+.fisrt-arrow{
+  position: absolute;
+  width: 400px;
+  top: 90%;
+  left: 78%; /* metade do tamanho negativo → metade fora da tela */
+  pointer-events: none; /* ignora cliques */
+  opacity: 0.1; /* se quiser mais leve/visível */
+}
+
+.second-img{
+  position: absolute;
+  width: 400px;
+  top: 223%;
+  right: 83%;/* metade do tamanho negativo → metade fora da tela */
+  pointer-events: none; /* ignora cliques */
+  opacity: 0.1; /* se quiser mais leve/visível */
+}
+
+
+.four-img{
+  position: absolute;
+  width: 480px;
+  top: 330%;
+  left: 83%; /* metade do tamanho negativo → metade fora da tela */
+  pointer-events: none; /* ignora cliques */
+  opacity: 0.1; /* se quiser mais leve/visível */
+}
+
 
 .topic {
     display: flex;
@@ -242,7 +306,6 @@
     display: flex;
     justify-content: center;
     margin-top: 8px;
-
 }
 
 .box-about-we {
@@ -305,7 +368,7 @@ h4,
     margin-left: -25px;
 }
 
-.box-card-price {
+#box-card-price {
     display: flex;
     justify-content: center;
     gap: 100px;
@@ -332,6 +395,12 @@ h4,
 .btn-selection:active {
     border: solid #a9872a;
     background-color: #a9872a;
+    color: #fff;
+}
+
+.btn-selection a,
+.btn-selection a:hover {
+    text-decoration: none;
     color: #fff;
 }
 
@@ -422,7 +491,7 @@ footer {
     justify-content: center;
 }
 
-.rights-reserved{
+.rights-reserved {
     font-size: 16px;
     margin-bottom: 40px;
 }

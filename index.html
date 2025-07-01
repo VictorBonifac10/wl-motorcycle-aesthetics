@@ -19,33 +19,40 @@
         <div class="box-top-header">
 
             <div class="box-logo">
-                <img class="logo" src="./assests/imgs/logo.svg" alt="logo">
+                <a href="#home"> <img class="logo" src="./assests/imgs/logo.svg" alt="logo"></a>
             </div>
 
             <div class="box-links">
-                <a href="#" class="link-header">Inicio</a>
-                <a href="#" class="link-header">Galeria</a>
-                <a href="#" class="link-header">Serviço</a>
-                <a href="#" class="link-header">Outros</a>
+                <a href="#home" class="link-header">Inicio</a>
+                <a href="#services" class="link-header">Serviços</a>
+                <a href="#about" class="link-header">Sobre Nós</a>
+                <a href="#prices" class="link-header">Valores</a>
+                <a href="#customers" class="link-header">Clientes</a>
 
-                <button id="btn-contact">Contato</button>
+                <a href="#contact" id="btn-contact">Contato</a>
 
             </div>
 
         </div>
 
-        <div class="video-container">
+        <div class="video-container" id="home">
             <video src="./assests/videos/banner.mp4" autoplay muted loop></video>
             <div class="mask"></div>
             <div class="banner-content">
                 <div>
-                    <h1 class="title">WL Motorcycles Aesthetics</h1>
-                    <p class="subtitle">Estilo, potência e atitude</p>
-                    <p class="description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint, assumenda
-                        error! Aperiam ratione eius soluta nihil fugiat impedit, eaque, at quia mollitia, odit quidem
-                        facilis suscipit quasi magni maiores iste.</p>
+                    <h1 class="title">WL Motorcycles</h1>
+                    <h1 class="title-custom">~ aesthetics ~</h1>
+                    <ul class="subtitle">
+                        <li>Estilo</li>
+                        <i class="ri-star-fill star-figure"></i>
+                        <li>Atitude</li>
+                        <i class="ri-star-fill star-figure"></i>
+                        <li>Potência</li>
+                    </ul>
+                    <p class="description">Seja bem-vindo ao seu novo ponto de confiança. Lavagem profissional,
+                        acabamento impecável e um visual que impõe respeito é só aqui!</p>
 
-                    <button id="btn-contact">Veja mais<i class="ri-arrow-down-s-line"></i></button>
+                    <a href="#prices" id="btn-contact">Veja mais<i class="ri-arrow-down-s-line"></i></a>
                 </div>
                 <div id="carouselExample" class="carousel slide" data-bs-ride="carousel" data-bs-interval="1700">
                     <div class="carousel-inner">
@@ -72,9 +79,9 @@
     </header>
 
     <main>
-        <hr style="width: 70%; display: block; margin: 0 auto;">
         <section>
-            <h3 class="topic">Serviços</h3>
+            <h3 class="topic" id="services">Serviços</h3>
+            <img src="./assests/imgs/seta.svg" class="fisrt-arrow" alt="seta">
             <div class="box-card">
                 <div class="card">
                     <div class="card-img">
@@ -114,22 +121,23 @@
 
         <hr style="width: 70%; display: block; margin: 0 auto;">
         <section>
-            <h3 class="topic">Sobre Nós</h3>
-
+            <h3 class="topic" id="about">Sobre Nós</h3>
+            <img src="./assests/imgs/roda.svg" class="second-img" alt="seta">
             <div class="box-about-we">
                 <div class="about-we-content">
-                    <p class="about-me">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam tempora eum
-                        id dolores vero iusto voluptate nisi voluptates consequuntur temporibus dolore, itaque iste,
-                        fugiat soluta nihil veritatis deleniti provident distinctio?
+                    <p class="about-me">A WL Motorcycles Aesthetics nasceu em 2024 com uma missão clara: elevar o padrão
+                        de cuidado estético para motos. Mais do que um lava-rápido, somos um espaço onde limpeza e
+                        acabamento se encontram com estilo, técnica e respeito por cada máquina.
                         <br><br>
-                        Quisquam tempora eum
-                        id dolores vero iusto voluptate nisi voluptates consequuntur temporibus dolore, itaque iste,
-                        fugiat soluta nihil veritatis deleniti provident distinctio?
+                        Atendemos quem valoriza presença, detalhe e personalidade. Da lavagem ao toque final, entregamos
+                        resultados à altura da sua moto — e da sua história sobre duas rodas.
                     </p>
 
                     <div class="social-media">
                         <button class="custom-btn"><i class="ri-instagram-fill icon-social-media"></i></button>
-                        <button class="custom-btn"><i class="ri-whatsapp-fill icon-social-media"></i></button>
+                        <a href="https://wa.me/5516997921298?text=Ol%C3%A1%2C%20tudo%20bem%3F%20%20Gostaria%20de%20agendar%20uma%20lavagem%2C%20tem%20disponibilidade%20para%20qual%20data%3F"
+                            target="_blank"> <button class="custom-btn"><i
+                                    class="ri-whatsapp-fill icon-social-media"></i></button></a>
                     </div>
                 </div>
 
@@ -170,9 +178,9 @@
         </section>
         <hr style="width: 70%; display: block; margin: 0 auto;">
         <section>
-            <h3 class="topic">Tabela de valores</h3>
+            <h3 class="topic" id="prices">Tabela de valores</h3>
 
-            <div class="box-card-price">
+            <div id="box-card-price">
                 <div class="card-price">
                     <div class="price">
                         <h4 style="font-size: 40px;">R$100,00</h4>
@@ -225,16 +233,16 @@
         </section>
         <hr style="width: 70%; display: block; margin: 0 auto;">
         <section>
-            <h3 class="topic">Clientes</h3>
+            <h3 class="topic" id="customers">Clientes</h3>
             <div class="box-client-all">
                 <div class="box-client-1">
                     <div class="card-client">
                         <div class="card-client-img">
-                            <img src="./assests/imgs/logo.svg" alt="" width="90px">
+                            <img src="./assests/imgs/guy.jpg" alt="" width="90px">
                         </div>
                         <div class="card-client-description">
-                            <p class="client-name">Carlos Santos - 27/03</p>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem, hic.</p>
+                            <p class="client-name">Edson Felipe - 27/03</p>
+                            <p>Serviço impecável, atendimento rápido e o resultado superou as expectativas. Recomendo de olhos fechados!.</p>
                             <div class="stars">
 
                                 <i class="ri-star-fill"></i>
@@ -248,11 +256,11 @@
                 <div class="box-client-2">
                     <div class="card-client">
                         <div class="card-client-img">
-                            <img src="./assests/imgs/logo.svg" alt="" width="90px">
+                            <img src="./assests/imgs/guy-2.jpg" alt="" width="90px">
                         </div>
                         <div class="card-client-description">
                             <p class="client-name">Carlos Santos - 13/04</p>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem, hic.</p>
+                            <p>Minha moto saiu como nova! Brilho impecável, ótimo acabamento e muita atenção aos detalhes.</p>
                             <div class="stars">
                                 <i class="ri-star-fill"></i>
                                 <i class="ri-star-fill"></i>
@@ -266,14 +274,16 @@
         </section>
         <hr style="width: 70%; display: block; margin: 0 auto;">
         <section>
-
-            <div class="box-contact">
+            <img src="./assests/imgs/bandeira.svg" class="four-img" alt="seta">
+            <div class="box-contact" id="contact">
                 <div class="left">
                     <h3>Contato</h3>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis neque eos vero, debitis,
                         quosunt ratione fugit nihil aut officia distinctio .</p>
 
-                    <button id="btn-selection">Agende</button>
+                    <button class="btn-selection"><a
+                            href="https://wa.me/5516997921298?text=Ol%C3%A1%2C%20tudo%20bem%3F%20%20Gostaria%20de%20agendar%20uma%20lavagem%2C%20tem%20disponibilidade%20para%20qual%20data%3F"
+                            target="_blank">Agendar</a></button>
 
                     <hr>
 
@@ -282,11 +292,14 @@
                     <div class="social-media-contact">
                         <div style="display: flex; align-items: center;">
                             <button class="custom-btn"><i class="ri-instagram-fill icon-social-media"></i></button><br>
-                            <p style="margin-top:8px"><a href="#">Instagram/WL Motorcycles Aesthetics</a></p>
+                            <p style="margin-top:8px; margin-left: 5px;"><a href="#">Instagram/WL Motorcycles
+                                    Aesthetics</a></p>
                         </div>
                         <div style="display: flex; align-items: center;">
                             <button class="custom-btn"><i class="ri-whatsapp-fill icon-social-media"></i></button>
-                            <p style="margin-top:8px"><a href="#">(16)9999-9999</a></p>
+                            <p style="margin-top:8px; margin-left: 5px;"><a
+                                    href="https://wa.me/5516997921298?text=Ol%C3%A1%2C%20tudo%20bem%3F%20%20Gostaria%20de%20agendar%20uma%20lavagem%2C%20tem%20disponibilidade%20para%20qual%20data%3F"
+                                    target="_blank">(16)9999-9999</a></p>
                         </div>
                     </div>
                 </div>
@@ -294,7 +307,7 @@
                 <div class="right">
                     <h3>Localização</h3>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis neque eos vero, debitis,
-                        quosunt ratione fugit nihil aut officia distinctio .</p>
+                        quosunt ratione fugit nihil aut officia distinctio.</p>
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14835.71497413402!2d-48.34474569999999!3d-21.627700149999992!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b8e1b94433cfe5%3A0x7162704619d188c8!2sNova%20Cidade%2C%20Mat%C3%A3o%20-%20SP%2C%2015991-530!5e0!3m2!1spt-BR!2sbr!4v1751310438044!5m2!1spt-BR!2sbr"
                         width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
@@ -310,4 +323,5 @@
 
 </body>
 <script src="./script/scripts.js"></script>
+
 </html>
