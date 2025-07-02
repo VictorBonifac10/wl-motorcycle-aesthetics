@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
 
 * {
@@ -10,8 +10,8 @@
     scroll-behavior: smooth;
 }
 
-body{
-      overflow-x: hidden;
+body {
+    overflow-x: hidden;
 }
 
 .box-top-header {
@@ -42,6 +42,7 @@ body{
     border-radius: 50%;
     cursor: pointer;
     filter: drop-shadow(8px 5px 1px rgba(0, 0, 0, 0.6));
+    margin-top: 8px;
 }
 
 /* Links de navegação */
@@ -165,7 +166,7 @@ body{
     list-style: none;
 }
 
-.subtitle li{
+.subtitle li {
     font-size: 13px;
     display: flex;
     justify-content: center;
@@ -178,7 +179,7 @@ body{
 }
 
 .description {
-    font-family: "Open Sans", sans-serif;
+    font-family: "Montserrat", sans-serif;
     max-width: 460px;
 }
 
@@ -222,34 +223,42 @@ body{
     /* mantém a imagem inteira sem cortar */
 }
 
-.fisrt-arrow{
-  position: absolute;
-  width: 400px;
-  top: 90%;
-  left: 78%; /* metade do tamanho negativo → metade fora da tela */
-  pointer-events: none; /* ignora cliques */
-  opacity: 0.1; /* se quiser mais leve/visível */
+.fisrt-arrow {
+    position: absolute;
+    width: 400px;
+    top: 90%;
+    left: 78%;
+    /* metade do tamanho negativo → metade fora da tela */
+    pointer-events: none;
+    /* ignora cliques */
+    opacity: 0.1;
+    /* se quiser mais leve/visível */
 }
 
-.second-img{
-  position: absolute;
-  width: 400px;
-  top: 223%;
-  right: 83%;/* metade do tamanho negativo → metade fora da tela */
-  pointer-events: none; /* ignora cliques */
-  opacity: 0.1; /* se quiser mais leve/visível */
+.second-img {
+    position: absolute;
+    width: 400px;
+    top: 223%;
+    right: 83%;
+    /* metade do tamanho negativo → metade fora da tela */
+    pointer-events: none;
+    /* ignora cliques */
+    opacity: 0.1;
+    /* se quiser mais leve/visível */
 }
 
 
-.four-img{
-  position: absolute;
-  width: 480px;
-  top: 330%;
-  left: 83%; /* metade do tamanho negativo → metade fora da tela */
-  pointer-events: none; /* ignora cliques */
-  opacity: 0.1; /* se quiser mais leve/visível */
+.four-img {
+    position: absolute;
+    width: 480px;
+    top: 330%;
+    left: 83%;
+    /* metade do tamanho negativo → metade fora da tela */
+    pointer-events: none;
+    /* ignora cliques */
+    opacity: 0.1;
+    /* se quiser mais leve/visível */
 }
-
 
 .topic {
     display: flex;
@@ -368,6 +377,20 @@ h4,
     margin-left: -25px;
 }
 
+.services-list ul li {
+    list-style: none;
+}
+
+.ri-checkbox-circle-fill {
+    margin-right: 10px;
+    color: #0c990c;
+}
+
+.ri-close-circle-fill {
+    margin-right: 10px;
+    color: #830101;
+}
+
 #box-card-price {
     display: flex;
     justify-content: center;
@@ -475,6 +498,10 @@ h4,
 .right {
     max-width: 400px;
     margin: 10px 0px 10px 10px;
+}
+
+span {
+    color: #a9872a;
 }
 
 iframe {
