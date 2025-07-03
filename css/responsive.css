@@ -1,0 +1,202 @@
+
+/*-------------------*/
+
+
+/* MEDIA QUERIES PARA RESPONSIVIDADE */
+
+/* Telas até 1200px */
+@media (max-width: 1200px) {
+  .banner-content {
+    flex-direction: column;
+    left: 20px;
+    top: 120px;
+  }
+
+
+.group{
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  #btn-contact{
+    display: block;
+    margin: 0 auto;
+  }
+
+#carouselExample{
+    display: block;
+    margin: 0 auto;
+    top: 10px;
+    width: 330px;
+  }
+}
+
+/* Telas até 992px (notebooks e tablets em paisagem) */
+@media (max-width: 992px) {
+  .box-links {
+    gap: 10px;
+    font-size: 16px;
+  }
+
+  .box-links #btn-contact{
+    text-align: center;
+  }
+
+#carouselExample{
+    display: block;
+    margin: 0 auto;
+    top: 15px;
+    width: 330px;
+  }
+
+  .box-about-we {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #box-card-price {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .box-client-all {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .box-contact {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  iframe {
+    width: 100% !important;
+  }
+}
+
+/* Telas até 768px (tablets) */
+@media (max-width: 768px) {
+  .banner-content {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 20px;
+    left: 0;
+  }
+
+.box-links #btn-contact{
+    display: none;
+  }
+
+  .group{
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+    .box-card {
+    flex-direction: column;
+    align-items: center;
+  }
+
+#carouselExample{
+    display: block;
+    margin: 0 auto;
+    top: 15px;
+    width: 350px;
+  }
+
+  .description {
+    font-size: 14px;
+  }
+
+  .card {
+    margin: 10px;
+  }
+
+  .card-client {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+/* Telas até 576px (celulares) */
+@media (max-width: 576px) {
+  .box-top-header {
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 15px;
+  }
+
+  .box-links {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .banner-content {
+    top: 175px;
+  }
+
+  .title-group, .description, #btn-contact{
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .title-custom{
+    display: block;
+    margin: 0 auto;
+  }
+
+  .group{
+    display: block;
+    margin: 0 auto;
+  }
+
+  .subtitle{
+    margin: 15px 0px;
+    padding: 0px;
+  }
+
+.description{
+    margin-bottom: 10px;
+    max-width: 250px;
+}
+
+  #carouselExample{
+    display: block;
+    margin: 0 auto;
+    top: 5px;
+    width: 250px;
+  }
+
+  .title {
+    font-size: 35px;
+  }
+
+  .title-custom {
+    font-size: 30px;
+  }
+
+  .card-price {
+    width: 80%;
+  }
+
+  .about-we-content {
+    max-width: 90%;
+  }
+
+  .social-media {
+    justify-content: center;
+  }
+
+  .rights-reserved {
+    text-align: center;
+    padding: 0 10px;
+  }
+
+  .carousel-control-prev, .carousel-control-next{
+    margin-bottom: 130px;
+  }
+}
