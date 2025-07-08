@@ -231,6 +231,7 @@ body {
     /* ignora cliques */
     opacity: 0.1;
     /* se quiser mais leve/visível */
+    z-index: -1;
 }
 
 .topic {
@@ -329,7 +330,7 @@ body {
 }
 
 .card-price {
-    width: 170px;
+    width: 255px;
     border-bottom-left-radius: 20px;
     box-shadow: 2px 4px 4px #949494;
     display: flex;
@@ -337,6 +338,7 @@ body {
     height: 100%;
     padding: 20px 0px 0px 0px;
     position: relative;
+    z-index: 1;
 }
 
 h4,
@@ -348,10 +350,13 @@ h4,
 .services-list {
     margin-top: 10px;
     margin-left: -25px;
+    padding: 10px;
 }
 
 .services-list ul li {
     list-style: none;
+    font-size: 14px;
+
 }
 
 .ri-checkbox-circle-fill {
@@ -367,8 +372,8 @@ h4,
 #box-card-price {
     display: flex;
     justify-content: center;
-    gap: 100px;
-    margin: 40px 0;
+    gap: 40px;
+    margin: 50px 0px;
     align-items: stretch;
     /* força os cards a ficarem do mesmo tamanho */
 }
