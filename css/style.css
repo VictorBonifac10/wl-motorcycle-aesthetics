@@ -12,6 +12,7 @@
 
 body {
     overflow-x: hidden;
+    background-color: #fff;
 }
 
 .box-top-header {
@@ -221,10 +222,10 @@ body {
     /* mantém a imagem inteira sem cortar */
 }
 
-.second-img {
+.img-background {
     position: absolute;
-    width: 400px;
-    top: 223%;
+    width: 450px;
+    top: 270%;
     right: 83%;
     /* metade do tamanho negativo → metade fora da tela */
     pointer-events: none;
@@ -341,6 +342,30 @@ body {
     z-index: 1;
 }
 
+.notice{
+    display: flex;
+    justify-content: center;
+}
+
+.notice p{
+    margin: 0px 0px 5px 0px;
+    font-size: 10px;
+    padding: 2px 13px;
+    background-color: #9e1111;
+    border: 1px solid #9e1111;
+    border-end-start-radius: 50px;
+    border-end-end-radius: 50px;
+    border-start-start-radius: 7px;
+    border-start-end-radius: 7px;
+    color: #fff;
+}
+
+.notice-available p{
+    padding: 2px 25px;
+    background-color: #1f8614;
+    border: 1px solid #1f8614;
+}
+
 h4,
 .services-list {
     display: flex;
@@ -356,7 +381,6 @@ h4,
 .services-list ul li {
     list-style: none;
     font-size: 14px;
-
 }
 
 .ri-checkbox-circle-fill {
@@ -364,18 +388,19 @@ h4,
     color: #0c990c;
 }
 
-.ri-close-circle-fill {
-    margin-right: 10px;
-    color: #830101;
+#box-card-price, #box-card-price-two{
+    display: flex;
+    justify-content: center;
+    gap: 90px;
+    margin: 50px 0px;
 }
 
 #box-card-price {
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-    margin: 50px 0px;
-    align-items: stretch;
-    /* força os cards a ficarem do mesmo tamanho */
+    height: 315px;
+}
+
+#box-card-price-two {
+    height: 380px;
 }
 
 .box-btn-selection {

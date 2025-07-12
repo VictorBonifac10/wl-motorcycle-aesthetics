@@ -1,64 +1,28 @@
+/* ============================= */
+/*     RESPONSIVIDADE DO SITE    */
+/* ============================= */
 
-/*-------------------*/
-
-
-/* MEDIA QUERIES PARA RESPONSIVIDADE */
-
-/* Telas até 1200px */
-@media (max-width: 1200px) {
-  .banner-content {
-    flex-direction: column;
-    left: 20px;
-    top: 120px;
-  }
-
-
-.group{
-    display: block;
-    margin: 0 auto;
-    text-align: center;
-  }
-
-  #btn-contact{
-    display: block;
-    margin: 0 auto;
-  }
-
-#carouselExample{
-    display: block;
-    margin: 0 auto;
-    top: 10px;
-    width: 330px;
-  }
-}
-
-/* Telas até 992px (notebooks e tablets em paisagem) */
-@media (max-width: 992px) {
+@media (max-width: 1100px) {
   .box-links {
     gap: 10px;
     font-size: 16px;
   }
 
-  .box-links #btn-contact{
+  .box-links #btn-contact {
     text-align: center;
   }
 
-#carouselExample{
+  #carouselExample {
     display: block;
     margin: 0 auto;
     top: 15px;
-    width: 330px;
+    width: 400px;
+    right: 40px;
   }
 
   .box-about-we {
     flex-direction: column;
     align-items: center;
-  }
-
-  #box-card-price {
-    flex-direction: column;
-    align-items: center;
-    gap: 30px;
   }
 
   .box-client-all {
@@ -76,43 +40,80 @@
   }
 }
 
-/* Telas até 768px (tablets) */
-@media (max-width: 768px) {
+
+/* Telas até 768px (tablets em modo retrato) */
+@media (max-width: 799px) {
   .banner-content {
     flex-direction: column;
     align-items: flex-start;
-    padding: 0 20px;
     left: 0;
   }
 
-.box-links #btn-contact{
-    display: none;
+  .banner-content {
+    top: 175px;
   }
 
-  .group{
+  .title-group,
+  .description,
+  #btn-contact {
     display: block;
     margin: 0 auto;
     text-align: center;
   }
 
-    .box-card {
+  .box-card {
     flex-direction: column;
     align-items: center;
   }
 
-#carouselExample{
+  .title-custom {
+    display: block;
+    margin: 10px auto;
+  }
+
+  .group {
     display: block;
     margin: 0 auto;
-    top: 15px;
-    width: 350px;
+  }
+
+  .title {
+    font-size: 65px;
+    margin-top: -40px;
+  }
+
+  .title-custom {
+    font-size: 50px;
+    margin-top: -15px;
   }
 
   .description {
     font-size: 14px;
+    margin: -10px 0px 10px 0px;
+  }
+
+  #carouselExample {
+    display: block;
+    margin: 0 auto;
+    top: 15px;
+    width: 330px;
+    right: 0;
   }
 
   .card {
     margin: 10px;
+  }
+
+  #box-card-price,
+  #box-card-price-two {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 230px;
+  }
+
+  #box-card-price {
+    margin-top: 180px;
+    margin-bottom: 380px;
   }
 
   .card-client {
@@ -121,8 +122,9 @@
   }
 }
 
+
 /* Telas até 576px (celulares) */
-@media (max-width: 576px) {
+@media (max-width: 699px) {
   .box-top-header {
     flex-direction: column;
     gap: 10px;
@@ -134,41 +136,34 @@
     justify-content: center;
   }
 
-  .banner-content {
-    top: 175px;
+  .box-links #btn-contact {
+    display: none;
   }
 
-  .title-group, .description, #btn-contact{
-    display: block;
-    margin: 0 auto;
-    text-align: center;
+  .title{
+    margin-top: -10px;
   }
 
-  .title-custom{
-    display: block;
-    margin: 0 auto;
-  }
-
-  .group{
-    display: block;
-    margin: 0 auto;
-  }
-
-  .subtitle{
+  .subtitle {
     margin: 15px 0px;
     padding: 0px;
   }
 
-.description{
-    margin-bottom: 10px;
-    max-width: 250px;
-}
+  .description {
+    display: block;
+    margin: 0 auto;
+    max-width: 300px;
+  }
 
-  #carouselExample{
+  .group #btn-contact{
+    margin-top: 15px ;
+  }
+
+  #carouselExample {
     display: block;
     margin: 0 auto;
     top: 5px;
-    width: 250px;
+    width: 350px;
   }
 
   .title {
@@ -196,7 +191,44 @@
     padding: 0 10px;
   }
 
-  .carousel-control-prev, .carousel-control-next{
+  .carousel-control-prev,
+  .carousel-control-next {
     margin-bottom: 130px;
+  }
+}
+
+
+/* Telas até 394px (celulares muito pequenos) */
+@media (max-width: 394px) {
+  .subtitle {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 0;
+    margin: 10px 0;
+  }
+
+  .subtitle li {
+    width: auto;
+    padding: 4px 12px;
+    font-size: 12px;
+  }
+
+  .star-figure {
+    font-size: 10px;
+  }
+
+  .banner-content {
+    padding: 0 10px;
+  }
+
+  .description {
+    max-width: 100%;
+    font-size: 13px;
+    padding: 0 10px;
+  }
+
+  #carouselExample{
+    width: 250px;
   }
 }
