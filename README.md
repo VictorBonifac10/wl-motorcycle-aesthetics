@@ -5,7 +5,7 @@ Projeto de landing page responsiva criado exclusivamente com HTML5, CSS3, JavaSc
 
 <img src="./assets/readme/readme.png" alt="preview" width="500" />
 
-🔗 [Acesse aqui a versão online](https://victorbonifac10.github.io/green-landingpage/)
+🔗 [Acesse aqui a versão online](https://wlmotorcycleaesthetics.netlify.app/)
 
 ## ✨ Recursos
 
