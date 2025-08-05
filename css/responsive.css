@@ -73,6 +73,7 @@
   .title-custom {
     display: block;
     margin: 10px auto;
+    margin-top: -20px;
   }
 
   .group {
@@ -86,8 +87,7 @@
   }
 
   .title-custom {
-    font-size: 50px;
-    margin-top: -15px;
+    font-size: 55px;
   }
 
   .description {
@@ -102,6 +102,7 @@
     width: 330px;
     right: 0;
   }
+
 
   .card {
     margin: 10px;
@@ -148,7 +149,7 @@
     display: none;
   }
 
-  .title{
+  .title {
     margin-top: -10px;
   }
 
@@ -163,8 +164,8 @@
     max-width: 300px;
   }
 
-  .group #btn-contact{
-    margin-top: 15px ;
+  .group #btn-contact {
+    margin-top: 15px;
   }
 
   #carouselExample {
@@ -180,6 +181,7 @@
 
   .title-custom {
     font-size: 30px;
+    margin-top: -10px;
   }
 
   .card-price {
@@ -193,6 +195,11 @@
   .social-media {
     justify-content: center;
   }
+
+  .carousel-control {
+    margin-top: 130px;
+  }
+
 
   .rights-reserved {
     text-align: center;
@@ -236,7 +243,7 @@
     padding: 0 10px;
   }
 
-  #carouselExample{
+  #carouselExample {
     width: 250px;
   }
 }

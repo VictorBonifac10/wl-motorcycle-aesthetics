@@ -136,18 +136,18 @@ body {
     position: relative;
     z-index: 3;
     color: white;
-    top: 180px;
+    top: 160px;
     left: 80px;
 }
 
 .title {
-    font-size: 80px;
+    font-size: 75px;
 }
 
 .title-custom {
-    margin-top: -65px;
-    margin-left: 40px;
-    font-size: 73px;
+    margin-top: -29px;
+    margin-left: 30px;
+    font-size: 68px;
     font-family: "Satisfy", cursive;
     font-weight: 500;
     color: #a9872a;
@@ -157,6 +157,7 @@ body {
 .subtitle {
     margin-top: 10px;
     margin-bottom: 30px;
+    margin-left: -20px;
     display: flex;
     gap: 20px;
     list-style: none;
@@ -220,14 +221,14 @@ body {
 .img-background {
     position: absolute;
     width: 450px;
-    top: 270%;
+    top: 185%;
     right: 83%;
     /* metade do tamanho negativo → metade fora da tela */
     pointer-events: none;
     /* ignora cliques */
     opacity: 0.1;
     /* se quiser mais leve/visível */
-    z-index: -1;
+    z-index: -10;
 }
 
 .topic {
@@ -334,7 +335,7 @@ body {
     height: 100%;
     padding: 20px 0px 0px 0px;
     position: relative;
-    z-index: 1;
+    z-index: 10;
 }
 
 .notice {
@@ -443,6 +444,7 @@ h4,
     object-fit: contain;
     border-radius: 3px;
 }
+
 
 /*
 
