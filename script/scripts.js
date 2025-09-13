@@ -1,5 +1,7 @@
 AOS.init();
 
+//-------------------- CARD EFFECT
+
 const cards = document.querySelectorAll('.card');
 
 cards.forEach((card) => {
@@ -11,8 +13,8 @@ cards.forEach((card) => {
     const centerX = rect.width / 2;
     const centerY = rect.height / 2;
 
-    const rotateX = -(y - centerY) / 15;
-    const rotateY = (x - centerX) / 15;
+    const rotateX = -(y - centerY) / 8;
+    const rotateY = (x - centerX) / 8;
 
     card.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
   });
@@ -21,6 +23,8 @@ cards.forEach((card) => {
     card.style.transform = 'rotateX(0deg) rotateY(0deg)';
   });
 });
+
+//-------------------- CARD EFFECT
 
 window.addEventListener("scroll", function () {
   const header = document.querySelector(".box-top-header");
@@ -31,5 +35,5 @@ window.addEventListener("scroll", function () {
   }
 });
 
-//--------------------
+
 
